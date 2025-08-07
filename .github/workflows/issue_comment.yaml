@@ -4,10 +4,10 @@ on:
   issue_comment:
     types: [opened]
 
-  jobs:
-    createComment:
-      runs-on: ubuntu-laatest 
-      steps:
-        - name: "dump git event"
-          run: echo "${{ toJson(github.event) }} | jq ."
-          shell: bash
+jobs:
+  createComment:
+    runs-on: ubuntu-laatest 
+    steps:
+      - name: "dump git event"
+        run: echo "${{ toJson(github.event) }} | jq ."
+        shell: bash

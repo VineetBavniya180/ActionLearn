@@ -6,7 +6,7 @@ on:
 
 jobs:
   createComment:
-    runs-on: ubuntu-laatest 
+    runs-on: ubuntu-latest 
     steps:
       - name: "dump git event"
         run: echo "${{ toJson(github.event) }} | jq ."

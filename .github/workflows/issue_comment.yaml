@@ -2,7 +2,7 @@ name: Create Issue Comment
 
 on:
   issue_comment:
-    types: [created]
+    types: [opened]
 
   jobs:
     createComment:

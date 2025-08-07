@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  HelloAction:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -14,3 +14,12 @@ jobs:
       
       - name: echo message
         run: echo "Hello, this is a practice action workflow!"
+  
+  ByeAction:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code 
+        uses: actions/checkout@v4
+      
+      - name: echo message
+        run: echo "Goodbye, this is another practice action workflow!" 

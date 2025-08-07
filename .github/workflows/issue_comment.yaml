@@ -1,7 +1,7 @@
 name: Create Issue Comment
 
 on:
-  issue_comment:
+  issues:
     types: [created, edited, deleted]
 
 jobs:
